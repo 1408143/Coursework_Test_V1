@@ -15,7 +15,6 @@
 			
 			$this->load->helper('form');
 			$this->load->library('encrypt');
-			$this->load->model('manage_account_m');
 			$this->load->model('table_m');
 			$this->load->model('query_m');
 			$this->load->model('login_m');
