@@ -58,7 +58,7 @@
 									echo form_error('');
 									echo '<label for="characterPicture">Character Picture</label>';
 									echo '<label class="btn btn-default btn-file">
-										<input type="file" name="characterPicture" id="characterPicture" value=""/>
+										<input type="file" name="characterPicture" id="characterPicture" value="" hidden/>
 									</label>';
 									if($character_info["characterPicture"]!=""){
 										echo '<label for="characterPicture">Current setting document is: '.$character_info["characterPicture"].'</label>';

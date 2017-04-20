@@ -77,7 +77,7 @@
 									echo form_error('characterPicture');
 									echo '<label for="characterPicture">Character Picture:</label>';
 									echo '<label class="btn btn-default btn-file">
-										<input type="file" name="characterPicture" id="characterPicture"/>
+										<input type="file" name="characterPicture" id="characterPicture" hidden/>
 									</label>';	
 								echo '</div>';
 							echo '</div>';
