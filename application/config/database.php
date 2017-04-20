@@ -72,13 +72,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
+//Database=db-8cea6649-a6b3;Data Source=us-cdbr-azure-southcentral-f.cloudapp.net;User Id=b38419854c676d;Password=20a1d4fd
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'dsn'	=> 'pgsql:host=us-cdbr-azure-southcentral-f.cloudapp.net;port=5432;dbname=db-8cea6649-a6b3',
+	'hostname' => 'us-cdbr-azure-southcentral-f.cloudapp.net',
+	'username' => 'b38419854c676d',
+	'password' => '20a1d4fd',
+	'database' => 'db-8cea6649-a6b3',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -88,7 +88,7 @@ $db['default'] = array(
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => FALSE,
+	'encrypt' => TRUE,
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
