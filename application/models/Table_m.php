@@ -5,6 +5,7 @@
 		
 		public function __construct(){
 			parent::__construct();
+			$this->load->library('table');
 			$this->load->model('query_m');
 			$this->load->library('encrypt');
 		}
