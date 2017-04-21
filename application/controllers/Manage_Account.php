@@ -4,6 +4,7 @@
 		public function __construct()
 		{
 			parent::__construct();
+			ini_set("display_errors", 0);
 			if( !$this->session->userdata('userID') ) {
 				redirect('/login/index');
 			}
