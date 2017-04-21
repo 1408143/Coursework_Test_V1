@@ -35,7 +35,7 @@
 		
 		function login_user() {
 			//check if post data exists and pass through xss filter, then store all post items in array 'userInfo'
-			$user_info = $this->security->xss_clean($this->input->post(null,true));//check if post data is >0
+			$user_info = $this->input->post(null,true);//check if post data is >0
 
 			//Ensure values exist, and validate the user's credentials
 			if(count($user_info)&& $this->login_m->validate_user($user_info['login'],$user_info['password'])){
